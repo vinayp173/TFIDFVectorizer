@@ -6,10 +6,10 @@
 # Configure
   We have used mysql database "XYZ.sql" import this file in mysql. it is alreday filled with the information which is extarcted from it's inbuilt corpus.<br>
   also need to install packages to make this work:-<br>
-  > pip install scipy
-  > pip install sklearn
-  > pip install numpy
-  > pip install scikit-learn
+  > pip install scipy <br>
+  > pip install sklearn <br>
+  > pip install numpy <br>
+  > pip install scikit-learn <br>
 # how to start new ?
   just truncate old database and replace documents from media\documents\allDocuments\combo folder with yours and done.
 # how it will work ?
