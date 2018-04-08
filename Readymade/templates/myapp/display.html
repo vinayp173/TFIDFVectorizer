@@ -1,0 +1,13 @@
+<html>
+{% load static %}
+
+<body>
+<ol>
+{% if data %}
+    {% for d in data%}
+    <li>{{d}}</li>
+    {%endfor%}
+{%endif%}
+</ol>
+</body>
+</html>

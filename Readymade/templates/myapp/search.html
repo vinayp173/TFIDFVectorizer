@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    <form action="{% url 'search' %}" method="post">
+        {% csrf_token %}
+        {% if que %}
+            <input type="text" id="input" name="input" style="width:80%;" value="{{ que }}">
+        {%else%}
+           <input type="text" id="input" name="input" style="width:80%;" >
+        {%endif%}
+    </form>
+    <ol>
+    {%if data%}
+        {% for doc in data %}
+            <li>{{doc}}</li>
+        {%endfor%}
+    {%endif%}
+    </ol>
+</body>
+</html>
